@@ -1,0 +1,18 @@
+#
+#Wed Aug 25 08:16:43 UTC 2021
+EMS_STATUSAFTERRETRY=REJECTED
+EMS_CREDENTIALNAME=EMS_OAUTH
+EMS_QUEUENAME=queue\:dmn/dh-dev-plat/dev/mesapscptempprova003-srv/DeadMSGQueue
+EMS_HOST=enterprise-messaging-messaging-gateway.cfapps.eu10.hana.ondemand.com
+EMS_RETRYNUM=0
+EMS_CONCURRPROC=1
+EMS_DMQCONNECTIONTYPE=Transport_OAuth2
+EMS_PORT=443
+EMS_DMQHOST=enterprise-messaging-messaging-gateway.cfapps.eu10.hana.ondemand.com
+EMS_AUTHTYPE=Transport_OAuth2
+EMS_DMQPATH=/protocols/amqp10ws
+EMS_NUMPREFETCH=5
+AMQP_PROTOCOL=/protocols/amqp10ws
+EMS_DMQAUTHORIZATION=EMS_OAUTH
+EMS_DMQPORT=443
+EMS_DMQ_QUEUE=queue\:dmn/dh-dev-plat/dev/mesapscptempprova003-srv
