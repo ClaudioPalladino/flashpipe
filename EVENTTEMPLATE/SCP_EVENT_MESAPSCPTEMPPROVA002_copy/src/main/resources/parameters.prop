@@ -1,0 +1,23 @@
+#Wed Aug 25 08:37:45 UTC 2021
+EMS_Queue_Name=queue\:dmn/dh-dev-plat/dev/mesapscptempprova003-srv
+CSDTP_Target_Token_Address=http\://virtual.glin-platform-dev.enelint.global\:80/token
+Method_Address_Token=POST
+Address_Timeout=60000
+EMS_Number_Concurrent_Processes=1
+Target_Address_Method=POST
+CSDTP_Token_Timeout=60000
+CSDTP_Token_Alias_Credential=CSDTP_ID_SECRET_USER_EVENT
+ProxyType_TargetToken=sapcc
+Protocol_EMS_Queue=/protocols/amqp10ws
+CSDTP_Token_GrantPassword=CSDTP_ROBOT_USER_EVENT
+Delivery_Status_AfterRetries=REJECTED
+Authentication_Mode=Transport_OAuth2
+EMS_Number_Prefetched_Messages=5
+ProxyType=sapcc
+Authentication_Type_Token=Basic
+Number_Retry_FailureCase=1
+Port_EMS_Queue=443
+Authentication_Alias_Target=None
+CSDT_Target_Address=http\://virtual.glin-platform-dev.enelint.global\:80/Platfrm/UrlRewrite/tb021/glin-ap31312pltb021-dev-platform-namespace/80/v3/clusters/cigjO5EgTc2CCYelh6dcpg/topics/Slsnoop-mstest012-EchoEvent/records
+Host_EMS_Queue=enterprise-messaging-messaging-gateway.cfapps.eu10.hana.ondemand.com
+EMS_Alias_Credential=EMS_OAUTH

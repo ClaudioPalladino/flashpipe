@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://r_contabsap_050.ws.localhost/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://r_contabsap_050.ws.localhost/" name="SitepainterSOAPController">
+<types>
+<xsd:schema xmlns:tns="http://r_contabsap_050.ws.localhost/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://r_contabsap_050.ws.localhost/">
+<xsd:element name="r_contabsap_050_ExtractXML">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="m_UserName" type="xsd:string" minOccurs="1" maxOccurs="1" /> 
+<xsd:element name="m_Password" type="xsd:string" minOccurs="1" maxOccurs="1" /> 
+<xsd:element name="m_Company" type="xsd:string" minOccurs="1" maxOccurs="1" /> 
+<xsd:element name="m_OutputFormat" type="xsd:string" minOccurs="0" maxOccurs="1"/> 
+<xsd:element name="pIDCOMPANY" type="xsd:string" minOccurs="1" maxOccurs="1" /> 
+<xsd:element name="pYEAR" type="xsd:double" minOccurs="1" maxOccurs="1" /> 
+<xsd:element name="pMONTH" type="xsd:double" minOccurs="1" maxOccurs="1" /> 
+<xsd:element name="pCREGCONT" type="xsd:double" minOccurs="1" maxOccurs="1" /> 
+<xsd:element name="pNPROGVRIPRN" type="xsd:double" minOccurs="1" maxOccurs="1" /> 
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="r_contabsap_050_ExtractXMLResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="return" type="xsd:string" minOccurs="0" /> 
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:schema>
+</types>
+<message name="r_contabsap_050_ExtractXML">
+<part name="parameters" element="tns:r_contabsap_050_ExtractXML" />
+</message>
+<message name="r_contabsap_050_ExtractXMLResponse">
+<part name="parameters" element="tns:r_contabsap_050_ExtractXMLResponse" />
+</message>
+<portType name="r_contabsap_050WS">
+<operation name="r_contabsap_050_ExtractXML">
+<input name="r_contabsap_050_ExtractXML" message="tns:r_contabsap_050_ExtractXML" />
+<output name="r_contabsap_050_ExtractXMLResponse" message="tns:r_contabsap_050_ExtractXMLResponse" />
+</operation>
+</portType>
+<binding name="r_contabsap_050WSPortBinding" type="tns:r_contabsap_050WS">
+<soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+<operation name="r_contabsap_050_ExtractXML">
+<soap:operation soapAction="" />
+<input name="r_contabsap_050_ExtractXML" >
+<soap:body use="literal" />
+</input>
+<output name="r_contabsap_050_ExtractXMLResponse" >
+<soap:body use="literal" />
+</output>
+</operation>
+</binding>
+<service name="r_contabsap_050WSService">
+<port name="r_contabsap_050WSPort" binding="tns:r_contabsap_050WSPortBinding">
+<soap:address location="https://saas.hrzucchetti.it:443/PagheWatlantiaspa/servlet/Report/r_contabsap_050" />
+</port>
+</service>
+</definitions>
