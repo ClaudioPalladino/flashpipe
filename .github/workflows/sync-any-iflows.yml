@@ -31,7 +31,7 @@ jobs:
       image: engswee/flashpipe:2.x.x-lite
     env:
       HOST_TMN: sd-dh-dev-plat.it-cpi001.cfapps.eu10.hana.ondemand.com
-      HOST_OAUTH: ${{ secrets.DEV_TOKEN_URL }}
+      HOST_OAUTH: sd-dh-dev-plat.authentication.eu10.hana.ondemand.com
       OAUTH_CLIENTID: ${{ secrets.DEV_CLIENT_ID }}
       OAUTH_CLIENTSECRET: ${{ secrets.DEV_CLIENT_SECRET }}     
     steps:
